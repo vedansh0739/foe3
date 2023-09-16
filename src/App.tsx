@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css'
 import axios from 'axios';
 function App() {
-  const [count, setCount] = useState(0)
-  const FetchTextData: React.FC = () => {
+  
     const [textData, setTextData] = useState<string | null>(null);
   
     useEffect(() => {
@@ -22,8 +21,7 @@ function App() {
   return (
     <>
       <div>
-        <p>ddooo</p>
-      do bro
+        
       {textData} 
 
       </div>
