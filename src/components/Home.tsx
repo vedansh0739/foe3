@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import '../des.css';
-const samplePosts = [
-  { id: '1', title: 't', content: 'This is the content of the first post.' },
-  { id: '2', title: 'Second Blog Post', content: 'This is the content of the second post.' },
-  // Add more sample posts as needed.
-];
+// const samplePosts = [
+//   { id: '1', title: 't', content: 'This is the content of the first post.' },
+//   { id: '2', title: 'Second Blog Post', content: 'This is the content of the second post.' },
+//   // Add more sample posts as needed.
+// ];
 
 const Home: React.FC = () => {
   return (
