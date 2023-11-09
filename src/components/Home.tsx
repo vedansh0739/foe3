@@ -10,8 +10,8 @@ import '../des.css';
 const Home: React.FC = () => {
   return (
     <div className='centered-container'>
-      <h1>Hi</h1>
-  <p>Glad you're here! I am Vedansh and I like reading dense information, teaching, making stuff and playing around with non-deterministic systems to make them work better.</p>
+      <h1>Vedansh Bagadia</h1>
+  <p>Hi! I'm so glad you're here! I am Vedansh and I like reading dense information, teaching, making stuff and playing around with non-deterministic systems to make them work better.</p>
   <p>I am currently working on improving a Convolutional Neural Network to enhance its ability to detect skin cancer from images.</p>
   <p>If you want to contact me or are looking for a buddy to build LITERALLY ANYTHING of utility with, you can mail me at vedansh0739[at]gmail[dot]com</p>
   <br></br>
