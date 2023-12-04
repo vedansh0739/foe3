@@ -16,6 +16,8 @@ const Home: React.FC = () => {
   <p>Lets talk!</p>
   <br></br>
   <h2>Notes</h2>
+  <p>[5/12/23] So excited for reliably automating a browser! Oscillating between using DOM simplification and Text Recognition for GPT4 to better comprehend and issue the desired commands. Prolly gonna end up using both!</p>
+  <br></br>
   <p>[9/11/23] I used a domain I had lying around to make this <a href="http://www.vedanshbackend.xyz" className='underline'>Url Shortener</a> which has one very important feature: It enhances link clarity by removing visually similar characters 'I' (uppercase i) and 'l' (lowercase L) from its generated URLs, thus preventing misinterpretation and typos!😮‍💨🥲</p>
   
   <br></br>
@@ -25,7 +27,7 @@ const Home: React.FC = () => {
 
     This app(let's call it Trolley) aims to simplify this process. It allows YouTubers to grant upload access to freelancers without sharing any account details. Once the editing is done, freelancers upload the videos to Trolley. The YouTuber then gets an online preview. If they like it, they give Trolley the go-ahead to upload the video directly to their YouTube channel. This way, the YouTuber doesn't have to download or re-upload anything, saving them a lot of time.
 
-    Moreover, Trolley ensures that freelancers don’t get direct access to the YouTuber's channel, which addresses the security worries. It's about making the whole process of getting a video from the editor to YouTube less tedious and more secure for everyone involved.</p>
+    Moreover, Trolley ensures that freelancers don’t get direct access to the YouTuber's channel, which addresses the security worries. It's about making the whole process of getting a video from the editor to YouTube less tedious and more secure for everyone involved. Currently only works for workspace accounts until it gets verified by google (taking ages :( Oauth is hard)</p>
       
     </div>
   );
