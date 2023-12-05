@@ -9,8 +9,9 @@ import '../des.css';
 
 const Home: React.FC = () => {
   return (
-    <div className='centered-container'>
-      <h1>Vedansh Bagadia</h1>
+    <div className="col">
+    <h1>Vedansh Bagadia</h1>
+      
   <p>Hi! I'm so glad you're here! I am Vedansh and I am currently working on making autonomous agents.</p>
   <p>vedansh0739[at]gmail[dot]com</p>
   <p>Lets talk!</p>
@@ -36,6 +37,7 @@ const Home: React.FC = () => {
     Moreover, Trolley ensures that freelancers don’t get direct access to the YouTuber's channel, which addresses the security worries. It's about making the whole process of getting a video from the editor to YouTube less tedious and more secure for everyone involved. Currently only works for workspace accounts until it gets verified by google (taking ages :( Oauth is hard)</p>
       
     </div>
+
   );
 }
 
