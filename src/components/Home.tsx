@@ -16,7 +16,7 @@ const Home: React.FC = () => {
   <p>Lets talk!</p>
   <br></br>
   <h2>Notes</h2>
-  <p>[6/12/23] If you want to figure out the coorinates of UI Elements from a webpage, there is no need of OCR! There is a really cool Javascript method getBoundingClientRect() that'll do the same!</p>
+  <p>[6/12/23] If you want to figure out the coorinates of UI Elements from a webpage, there is no need to use OCR! There is a really cool Javascript method getBoundingClientRect() that'll do the same!</p>
   <br></br>
   <p>[6/12/23] "What information should GPT use to determine whether to scroll down or not?" is a bad question to ask, that results from a reluctance to think deeper (I was committing the same mistake for a very long time). GPT should always try to scroll down to gather the max information it possibly can from a webpage. "How to scroll back up by the correct amount to issue the necessary click?" is a better question to ask.</p>
   <br></br>
