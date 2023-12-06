@@ -17,7 +17,7 @@ const Home: React.FC = () => {
   <p>Lets talk!</p>
   <br></br>
   <h2>Notes</h2>
-  <p>[7/12/23] <a href="https://github.com/nat/natbot">Natbot</a> was really well thought out. Over the past few days, I made it's prompt more deterministic, added &lt;textarea&gt; so that it can detect more text input areas, experimented a lot with OCR until I realized that simply using JS is the best approach, and learnt how awesome the DOM snapshot feature of playwright is! </p>
+  <p>[7/12/23] <a href="https://github.com/nat/natbot">Natbot</a> is pretty dope.  <a href="https://www.loom.com/share/b823c5cd21534aa99d08db789ad85aef">Over the past few days</a>, I made it's prompt more deterministic, added &lt;textarea&gt; so that it can detect more text input areas, experimented a lot with OCR until I realized that simply using JS is the best approach, and learnt how awesome the DOM snapshot feature of playwright is!</p>
   <br></br>
   <p>[6/12/23] If you want to figure out the coorinates of UI Elements from a webpage, there is no need to use OCR! There is a really cool Javascript method getBoundingClientRect() that'll do the same!</p>
   <br></br>
