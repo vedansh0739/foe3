@@ -17,11 +17,13 @@ const Home: React.FC = () => {
   <p>Lets talk!</p>
   <br></br>
   <h2>Notes</h2>
+  <p>[7/12/23] <a href="https://github.com/nat/natbot">Natbot</a> was really well thought out. Over the past few days, I made it's prompt more deterministic, added &lt;textarea&gt; so that it can detect more text input areas, experimented a lot with OCR until I realized that simply using JS is the best approach, and learnt how awesome the DOM snapshot feature of playwright is! </p>
+  <br></br>
   <p>[6/12/23] If you want to figure out the coorinates of UI Elements from a webpage, there is no need to use OCR! There is a really cool Javascript method getBoundingClientRect() that'll do the same!</p>
   <br></br>
   <p>[6/12/23] "What information should GPT use to determine whether to scroll down or not?" is a bad question to ask, that results from a reluctance to think deeper (I was committing the same mistake for a very long time). GPT should always try to scroll down to gather the max information it possibly can from a webpage. "How to scroll back up by the correct amount to issue the necessary click?" is a better question to ask.</p>
   <br></br>
-  <p>[5/12/23] DOM simplification is quick and easy. OCR gives coordinates of every indivisible part of the string, i.e. every single word (GPT doesn't like it). Replicate llava-13b vision model is great for getting visual description of the images (this helpful for GPT in determining when to scroll), however, messes up the coordinates. Gotta find a way to combine all three!</p>
+  <p>[5/12/23] DOM simplification is quick and easy. OCR gives coordinates of every indivisible part of the string, i.e. every single word (GPT doesn't like it). Replicate's llava-13b vision model is great for getting visual description of the images (this helpful for GPT in determining when to scroll), however, messes up the coordinates. Gotta find a way to combine all three!</p>
   <br></br>
   <p>[5/12/23] So excited for reliably automating a browser! Oscillating between using DOM simplification and Text Recognition for GPT4 to better comprehend and issue the desired commands. Prolly gonna end up using both!</p>
   <br></br>
