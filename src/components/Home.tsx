@@ -20,8 +20,8 @@ const Home: React.FC = () => {
   <br></br>
   <h2>Notes</h2>
   <p>[10/12/23] Tried to add Email functionality to the bot. Google doesn't allow bots to sign in, so 
-    used proton's email service. Then I came across this beauty<img src={img1} style={{ width: '650px' }}></img>
-    After inspecting it you will realize that the "password" input box has a <i>type</i> attribute but the username input box doesn't have one for lord knows what reason!<img src={img2} style={{width:'650px'}}></img>This atrocity complete wrecked my gpt inference as it was dependant on the type attribute to make a decision. The thing that I am most triggered about is that this inconsistency is on the same page with amongst two very similar looking input boxes! ID attribute, on the other hand, does have the required value, however, it consists of irrelevant values in many cases. Therefore, the autocomplete attribute seems like the best choice for now. However, after coming across so many inconsistencies, I am sure of one thing: DOM simplifaction for GPT inference in NOT AT ALL generalisable. Multi Modal is the ONLY way.
+    used proton's email service. Then I came across this beauty<img src={img1} style={{ width: '100%' }}></img>
+    After inspecting it you will realize that the "password" input box has a <i>type</i> attribute but the username input box doesn't have one for lord knows what reason!<img src={img2} style={{width:'100%'}}></img>This atrocity complete wrecked my gpt inference as it was dependant on the type attribute to make a decision. The thing that I am most triggered about is that this inconsistency is on the same page with amongst two very similar looking input boxes! ID attribute, on the other hand, does have the required value, however, it consists of irrelevant values in many cases. Therefore, the autocomplete attribute seems like the best choice for now. However, after coming across so many inconsistencies, I am sure of one thing: DOM simplifaction for GPT inference in NOT AT ALL generalisable. Multi Modal is the ONLY way.
 
   </p>
   <br></br>
