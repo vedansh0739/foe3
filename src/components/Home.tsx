@@ -6,6 +6,8 @@ import '../des.css';
 //   { id: '2', title: 'Second Blog Post', content: 'This is the content of the second post.' },
 //   // Add more sample posts as needed.
 // ];
+import img1 from './a1.png';
+import img2 from './a2.png';
 
 const Home: React.FC = () => {
   return (
@@ -17,11 +19,17 @@ const Home: React.FC = () => {
   <p>Lets talk!</p>
   <br></br>
   <h2>Notes</h2>
+  <p>[10/12/23] Tried to add Email functionality to the bot. Google doesn't allow bots to sign in, so 
+    used proton's email service. Then I came across this beauty<img src={img1} style={{ width: '650px' }}></img>
+    After inspecting it you will realize that the "password" input box has a <i>type</i> attribute but the username input box doesn't have one for lord knows what reason!<img src={img2} style={{width:'650px'}}></img>This atrocity complete wrecked my gpt inference as it was dependant on the type attribute to make a decision. The thing that I am most triggered about is that this inconsistency is on the same page with amongst two very similar looking input boxes! ID attribute, on the other hand, does have the required value, however, it consists of irrelevant values in many cases. Therefore, the autocomplete attribute seems like the best choice for now. However, after coming across so many inconsistencies, I am sure of one thing: DOM simplifaction for GPT inference in NOT AT ALL generalisable. Multi Modal is the ONLY way.
+
+  </p>
+  <br></br>
   <p>[7/12/23] <a href="https://github.com/nat/natbot">Natbot</a> is pretty dope.  <a href="https://www.loom.com/share/1d5d499f08ef4fac9756815509861df6">Over the past few days</a>, I made it's prompt more deterministic, added &lt;textarea&gt; so that it can detect more text input areas, experimented a lot with OCR until I realized that simply using JS is the best approach, and learnt how awesome the DOM snapshot feature of playwright is!</p>
   <br></br>
-  <p>[6/12/23] If you want to figure out the coorinates of UI Elements from a webpage, there is no need to use OCR! There is a really cool Javascript method getBoundingClientRect() that'll do the same!</p>
+  <p>[6/12/23] If you want to figure out the coordinates of UI Elements from a webpage, there is no need to use OCR! There is a really cool Javascript method getBoundingClientRect() that'll do the same!</p>
   <br></br>
-  <p>[6/12/23] "What information should GPT use to determine whether to scroll down or not?" is a bad question to ask, that results from a reluctance to think deeper (I was committing the same mistake for a very long time). GPT should always try to scroll down to gather the max information it possibly can from a webpage. "How to scroll back up by the correct amount to issue the necessary click?" is a better question to ask.</p>
+  <p>[6/12/23] "What information should GPT use to determine whether to scroll down or not?" is a bad question to ask, that results from a reluctance to think deeper (I was committing the same mistake for a very long time). The browser should always try to scroll down to gather the max information it possibly can from a webpage. "How to scroll back up by the correct amount to issue the necessary click?" is a better question to ask.</p>
   <br></br>
   <p>[5/12/23] DOM simplification is quick and easy. OCR gives coordinates of every indivisible part of the string, i.e. every single word (GPT doesn't like it). Replicate's llava-13b vision model is great for getting visual description of the images (this helpful for GPT in determining when to scroll), however, messes up the coordinates. Gotta find a way to combine all three!</p>
   <br></br>
