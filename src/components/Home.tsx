@@ -19,13 +19,27 @@ const Home: React.FC = () => {
   <p>Lets talk!</p>
   <br></br>
   <h2>Notes</h2>
+  <h3>Forked Natbot to make it more reliable</h3>
+  <p>[13/12/23] This agent seeks detailed commands for precision of workflows. This allows it to execute tasks more reliably.</p>
+  <div style={{ position: 'relative', paddingBottom: '62.5%', height: 0 }}>
+      <iframe 
+        src="https://www.loom.com/embed/7f1b615263274a849772967e5d6323ab?sid=f46f64fd-381b-464b-b17d-ab911dbdbde3"
+        frameBorder="0"
+        allowFullScreen
+        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+      ></iframe>
+    </div>
+
+    <p><a href="https://github.com/vedansh0739/Deterministic-Browser-Agent">Github</a> (contact me to get the dataset used for finetuning GPT 3.5 turbo 1106 that this works off of)
+    </p><p>NOTE: This does not work as well on some websites because the HTML structure of websites varies greatly across the web. I have started working on an agent that uses snapshots of webpages to make decisions instead.</p>
+  <br></br>
   <p>[10/12/23] Tried to add Email functionality to the bot. Google doesn't allow bots to sign in, so 
     used proton's email service. Then I came across this beauty<img src={img1} style={{ width: '100%' }}></img>
-    After inspecting it you will realize that the "password" input box has a <i>type</i> attribute but the username input box doesn't have one for lord knows what reason!<img src={img2} style={{width:'100%'}}></img>This atrocity complete wrecked my gpt inference as it was dependant on the type attribute to make a decision. The thing that I am most triggered about is that this inconsistency is on the same page with amongst two very similar looking input boxes! ID attribute, on the other hand, does have the required value, however, it consists of irrelevant values in many cases. Therefore, the autocomplete attribute seems like the best choice for now. However, after coming across so many inconsistencies, I am sure of one thing: DOM simplifaction for GPT inference in NOT AT ALL generalisable. Multi Modal is the ONLY way.
+    After inspecting it you will realize that the "password" input box has a <i>type</i> attribute but the username input box doesn't have one for lord knows what reason!<img src={img2} style={{width:'100%'}}></img>This atrocity complete wrecked my gpt inference as it was dependant on the type attribute to make a decision. The thing that I am most triggered about is that this inconsistency is on the same page and amongst two very similar looking input boxes! The ID attribute, on the other hand, does have the required value, however, it consists of irrelevant values on many other websites. Therefore, the autocomplete attribute seems like the best choice for now. However, after coming across so many inconsistencies, I am sure of one thing: DOM simplification for GPT inference in NOT AT ALL generalisable. Multi Modal is the ONLY way.
 
   </p>
   <br></br>
-  <p>[7/12/23] <a href="https://github.com/nat/natbot">Natbot</a> is pretty dope.  <a href="https://www.loom.com/share/1d5d499f08ef4fac9756815509861df6">Over the past few days</a>, I made it's prompt more deterministic, added &lt;textarea&gt; so that it can detect more text input areas, experimented a lot with OCR until I realized that simply using JS is the best approach, and learnt how awesome the DOM snapshot feature of playwright is!</p>
+  <p>[7/12/23] <a href="https://github.com/nat/natbot">Natbot</a> is pretty dope.  <a href="https://www.loom.com/share/1d5d499f08ef4fac9756815509861df6">Over the past few days</a>, I made it's prompt more deterministic, added more HTML elements for it to consider, experimented a lot with OCR until I realized that simply using JS is the best approach, and learnt how awesome the DOM snapshot feature of playwright is!</p>
   <br></br>
   <p>[6/12/23] If you want to figure out the coordinates of UI Elements from a webpage, there is no need to use OCR! There is a really cool Javascript method getBoundingClientRect() that'll do the same!</p>
   <br></br>
@@ -40,9 +54,10 @@ const Home: React.FC = () => {
   <br></br>
   
 
-  <p>[15/10/23] Poked sticks in the OAuth 2.0 protocol to make a prototype of a web app that helps YouTubers collaborate better with freelance video editors. YouTubers face the hassle of downloading ready-to-upload videos which they receive from video editor freelancers and then uploading them to YouTube. It's a time-consuming task, especially for those always on the move. Also, they are uncomfortable sharing their YouTube account passwords with freelancers for direct uploads due to security concerns.
+  <h3>Poked sticks in the OAuth 2.0 protocol</h3> 
+  <p>[15/10/23] Stitched togethor a prototype of a web app that helps YouTubers collaborate better with freelance video editors. YouTubers face the hassle of downloading ready-to-upload videos which they receive from video editor freelancers and then uploading them to YouTube. It's a time-consuming task, especially for those always on the move. Also, they are uncomfortable sharing their YouTube account passwords with freelancers for direct uploads due to security concerns.
 
-    This app(let's call it Trolley) aims to simplify this process. It allows YouTubers to grant upload access to freelancers without sharing any account details. Once the editing is done, freelancers upload the videos to Trolley. The YouTuber then gets an online preview. If they like it, they give Trolley the go-ahead to upload the video directly to their YouTube channel. This way, the YouTuber doesn't have to download or re-upload anything, saving them a lot of time.
+    This app (let's call it Trolley) aims to simplify this process. It allows YouTubers to grant upload access to freelancers without sharing any account details. Once the editing is done, freelancers upload the videos to Trolley. The YouTuber then gets an online preview. If they like it, they give Trolley the go-ahead to upload the video directly to their YouTube channel. This way, the YouTuber doesn't have to download or re-upload anything, saving them a lot of time.
 
     Moreover, Trolley ensures that freelancers don’t get direct access to the YouTuber's channel, which addresses the security worries. It's about making the whole process of getting a video from the editor to YouTube less tedious and more secure for everyone involved. Currently only works for workspace accounts until it gets verified by google (taking ages :( Oauth is hard)</p>
       
