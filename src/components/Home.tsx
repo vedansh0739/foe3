@@ -31,25 +31,23 @@ const Home: React.FC = () => {
     </div>
 
     <p><a href="https://github.com/vedansh0739/Deterministic-Browser-Agent">Github</a> (contact me to get the dataset used for finetuning GPT 3.5 turbo 1106 that this works off of)
-    </p><p>NOTE: This does not work as well on some websites because the DOM structure of websites varies greatly across the web. I have started working on an agent that uses snapshots of webpages to make decisions instead.</p>
+    </p><p>NOTE: This does not work as well on some websites because the DOM structure of websites varies greatly across the web. I have started working on an agent that uses snapshots of webpages to make decisions instead (thanks to <a href='https://www.semanticscholar.org/paper/From-Pixels-to-UI-Actions%3A-Learning-to-Follow-via-Shaw-Joshi/ee7020fc413590878dca60dcf41896bbe6a6c628#citing-papers'>this</a> paper)</p>
   <br></br>
   <p>[10/12/23] Tried to add Email functionality to the bot. Google doesn't allow bots to sign in, so 
     used proton's email service. Then I came across this beauty<img src={img1} style={{ width: '100%' }}></img>
-    After inspecting it you will realize that the "password" input box has a <i>type</i> attribute but the username input box doesn't have one for lord knows what reason!<img src={img2} style={{width:'100%'}}></img>This atrocity complete wrecked my gpt inference as it was dependant on the type attribute to make a decision. The thing that I am most triggered about is that this inconsistency is on the same page and amongst two very similar looking input boxes! The ID attribute, on the other hand, does have the required value, however, it consists of irrelevant values on many other websites. Therefore, the autocomplete attribute seems like the best choice for now. However, after coming across so many inconsistencies, I am sure of one thing: DOM simplification for GPT inference in NOT AT ALL generalisable. Multi Modal is the ONLY way.
+    After inspecting it you will realize that the "password" input box has a <i>type</i> attribute but the username input box doesn't have one inspite of visual similarity <img src={img2} style={{width:'100%'}}></img>These sorts of inconsistencies in the front end take a toll on gpt inference. There exist alternatives to solve this like using ID attribute, however, the solution is not generalisable as the ID attribute does not contain relevant values on all websites on the web. One way to solve this problem might be to prompt the LLM to extract the relevant content from the HTML by itself but this might drastically increase inference cost. OCR is not a good way to approach automation either.
 
   </p>
   <br></br>
-  <p>[7/12/23] <a href="https://github.com/nat/natbot">Natbot</a> is pretty dope.  <a href="https://www.loom.com/share/1d5d499f08ef4fac9756815509861df6">Over the past few days</a>, I made it's prompt more deterministic, added more HTML elements for it to consider, experimented a lot with OCR until I realized that simply using JS is the best approach, and learnt how awesome the DOM snapshot feature of playwright is!</p>
-  <br></br>
-  <p>[6/12/23] If you want to figure out the coordinates of UI Elements from a webpage, there is no need to use OCR! There is a really cool Javascript method getBoundingClientRect() that'll do the same!</p>
+  <p>[7/12/23] <a href="https://github.com/nat/natbot">Natbot</a> is pretty dope.  <a href="https://www.loom.com/share/1d5d499f08ef4fac9756815509861df6">Over the past few days</a>, I changed it's input interpretation to better benefit from more detailed prompts, added more HTML elements/attibutes for it to consider while neglecting the less relevant ones, and learnt how awesome the DOM snapshot feature of playwright is!</p>
   <br></br>
   <p>[6/12/23] "What information should GPT use to determine whether to scroll down or not?" is a bad question to ask, that results from a reluctance to think deeper (I was committing the same mistake for a very long time). The browser should always try to scroll down to gather the max information it possibly can from a webpage. "How to scroll back up by the correct amount to issue the necessary click?" is a better question to ask.</p>
   <br></br>
-  <p>[5/12/23] DOM simplification is quick and easy. OCR gives coordinates of every indivisible part of the string, i.e. every single word (GPT doesn't like it). Replicate's llava-13b vision model is great for getting visual description of the images (this helpful for GPT in determining when to scroll), however, messes up the coordinates. Gotta find a way to combine all three!</p>
+  <p>[5/12/23] I am skeptical of using OCR to feed information to the LLM as it would limit understanding to the surface level of the text, neglecting the deeper context and the interaction between textual and visual elements in UIs. Therefore, DOM simplification seems like the way to go for now</p>
   <br></br>
-  <p>[5/12/23] So excited for reliably automating a browser! Oscillating between using DOM simplification and Text Recognition for GPT4 to better comprehend and issue the desired commands. Prolly gonna end up using both!</p>
+  <p>[5/12/23] So excited for reliably automating a browser! Oscillating between using DOM simplification and OCR for the LLM to better comprehend and issue the desired commands.</p>
   <br></br>
-  <p>[9/11/23] I used a domain I had lying around to make this <a href="http://www.vedanshbackend.xyz" className='underline'>Url Shortener</a> which has one very important feature: It enhances link clarity by removing visually similar characters 'I' (uppercase i) and 'l' (lowercase L) from its generated URLs, thus preventing misinterpretation and typos!😮‍💨🥲</p>
+  <p>[9/11/23] I used a domain I had lying around to make this <a href="http://www.vedanshbackend.xyz" className='underline'>Url Shortener</a> which has one very important feature: It enhances link clarity by removing visually similar characters 'I' (uppercase i) and 'l' (lowercase L) from its generated URLs, thus preventing misinterpretation and typos.</p>
   
   <br></br>
   
