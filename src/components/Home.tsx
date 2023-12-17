@@ -31,7 +31,7 @@ const Home: React.FC = () => {
     </div>
 
     <p><a href="https://github.com/vedansh0739/Deterministic-Browser-Agent">Github</a> (contact me to get the dataset used for finetuning GPT 3.5 turbo 1106 that this works off of)
-    </p><p>NOTE: This does not work as well on some websites because the DOM structure of websites varies greatly across the web. I have started working on an agent that uses snapshots of webpages to make decisions instead (thanks to <a href='https://www.semanticscholar.org/paper/From-Pixels-to-UI-Actions%3A-Learning-to-Follow-via-Shaw-Joshi/ee7020fc413590878dca60dcf41896bbe6a6c628#citing-papers'>this</a> paper)</p>
+    </p><p>NOTE: This does not work as well on some websites because the DOM structure of websites varies greatly across the web. I have started working on an agent that uses snapshots of webpages to make decisions instead (thanks to <a href='https://www.semanticscholar.org/paper/From-Pixels-to-UI-Actions%3A-Learning-to-Follow-via-Shaw-Joshi/ee7020fc413590878dca60dcf41896bbe6a6c628#citing-papers'>this</a> paper!)</p>
   <br></br>
   <p>[10/12/23] Tried to add Email functionality to the bot. Google doesn't allow bots to sign in, so 
     used proton's email service. Then I came across this beauty<img src={img1} style={{ width: '100%' }}></img>
