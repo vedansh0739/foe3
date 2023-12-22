@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     <div className="col">
     <h1>Vedansh Bagadia</h1>
       
-  <p>Hi! I'm so glad you're here! I am Vedansh and I am currently working on making autonomous agents. I am primarily focussing on two things and these will stay true for atleast several years in the future: firstly, creating something, and secondly, collecting feedback from users who use that something. I also believe it's important to carry out these tasks quickly and with assertiveness, even when the best choices are not clear, in order to contribute more effectively to the bigger goal of expanding human consciousness while minimising non productive suffering.</p>
+  <p>Hi! I'm so glad you're here! I am Vedansh and I am currently working on making autonomous agents. I am primarily focussing on two things and these will stay true for atleast several years in the future: firstly, creating something, and secondly, collecting feedback from users who use that thing. I also believe it's important to carry out these tasks quickly and with assertiveness, even when the best choices are not clear. I am a <a href="https://twitter.com/pmarca/status/1713930459779129358">techno-optimist</a>.</p>
   <p>Lets talk!</p>
   <p>vedansh0739[at]gmail[dot]com</p>
   <br></br>
