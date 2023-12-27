@@ -19,7 +19,7 @@ const Home: React.FC = () => {
   <p>vedansh0739[at]gmail[dot]com</p>
   <br></br>
   <h2>Notes</h2>
-  <h3>Forked Natbot to make it more reliable</h3>
+  <h3>Forked  <a href="https://github.com/nat/natbot">Natbot</a> to make it more reliable</h3>
   <p>[13/12/23] This agent seeks detailed commands for precision of workflows. This allows it to execute tasks more reliably.</p>
   <div style={{ position: 'relative', paddingBottom: '62.5%', height: 0 }}>
       <iframe 
@@ -40,8 +40,6 @@ const Home: React.FC = () => {
   </p>
   <br></br>
   <p>[7/12/23] <a href="https://github.com/nat/natbot">Natbot</a> is pretty dope.  <a href="https://www.loom.com/share/1d5d499f08ef4fac9756815509861df6">Over the past few days</a>, I changed it's input interpretation to better benefit from more detailed prompts, added more HTML elements/attibutes for it to consider while neglecting the less relevant ones, and learnt how awesome the DOM snapshot feature of playwright is!</p>
-  <br></br>
-  <p>[6/12/23] "What information should GPT use to determine whether to scroll down or not?" is a bad question to ask, that results from a reluctance to think deeper (I was committing the same mistake for a very long time). The browser should always try to scroll down to gather the max information it possibly can from a webpage. "How to scroll back up by the correct amount to issue the necessary click?" is a better question to ask.</p>
   <br></br>
   <p>[5/12/23] I am skeptical of using OCR to feed information to the LLM as it would limit understanding to the surface level of the text, neglecting the deeper context and the interaction between textual and visual elements in UIs. Therefore, DOM simplification seems like the way to go for now</p>
   <br></br>
