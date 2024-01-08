@@ -19,6 +19,15 @@ const Home: React.FC = () => {
   <p>vedansh0739[at]gmail[dot]com</p>
   <br></br>
   <h2>Notes</h2>
+  <h3>Iter solely uses screenshots of pages to make decisions!!!</h3>
+
+  <p>[09/01/23] Iter uses Cogagent to allow users to make browser automation workflows using natural language. A screenshot of the current page and the corresponding user command is used by the model to issue the necessary keyboard or mouse action. The lack of dependance on information from the DOM allows it to be so much more versatile and generalisable across the web! The future of these kind of agents is bright!
+    
+    Technologies used: Google compute engine to host the visual language model using Flask, Django, Playwright (for backend), React </p>
+    <div style={{ position: 'relative', paddingBottom: '62.5%', height: 0 }}>
+    <iframe style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}src="https://www.youtube.com/embed/31hfh931XfU?si=NY1c54YiIWFJhkja" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  <br></br>
   <h3>Forked  <a href="https://github.com/nat/natbot">Natbot</a> to make it more reliable</h3>
   <p>[13/12/23] This agent seeks detailed commands for precision of workflows. This allows it to execute tasks more reliably.</p>
   <div style={{ position: 'relative', paddingBottom: '62.5%', height: 0 }}>
@@ -31,7 +40,7 @@ const Home: React.FC = () => {
     </div>
 
     <p><a href="https://github.com/vedansh0739/Deterministic-Browser-Agent">Github</a> (contact me to get the dataset used for finetuning GPT 3.5 turbo 1106 that this works off of)
-    </p><p>NOTE: This does not work as well on some websites because the DOM structure of websites varies greatly across the web. I have started working on an agent that uses snapshots of webpages to make decisions instead (thanks to <a href='https://www.semanticscholar.org/paper/From-Pixels-to-UI-Actions%3A-Learning-to-Follow-via-Shaw-Joshi/ee7020fc413590878dca60dcf41896bbe6a6c628#citing-papers'>this</a> paper!)</p>
+    </p><p>NOTE: This does not work as well on some websites because the DOM structure of websites varies greatly across the web. I have started working on an agent that uses screenshots of webpages to make decisions instead (thanks to <a href='https://www.semanticscholar.org/paper/From-Pixels-to-UI-Actions%3A-Learning-to-Follow-via-Shaw-Joshi/ee7020fc413590878dca60dcf41896bbe6a6c628#citing-papers'>this</a> paper!)</p>
   <br></br>
   <p>[10/12/23] Tried to add Email functionality to the bot. Google doesn't allow bots to sign in, so 
     used proton's email service. Then I came across this beauty<img src={img1} style={{ width: '100%' }}></img>
