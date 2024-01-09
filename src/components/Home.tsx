@@ -25,7 +25,7 @@ const Home: React.FC = () => {
     
     Technologies used: Google compute engine to host the visual language model using Flask, Django, Playwright (for backend), React </p>
     <div style={{ position: 'relative', paddingBottom: '62.5%', height: 0 }}>
-    <iframe style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}src="https://www.youtube.com/embed/31hfh931XfU?si=NY1c54YiIWFJhkja" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}src="https://www.youtube.com/embed/31hfh931XfU?si=NY1c54YiIWFJhkja" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
     </div>
   <br></br>
   <h3>Forked  <a href="https://github.com/nat/natbot">Natbot</a> to make it more reliable</h3>
