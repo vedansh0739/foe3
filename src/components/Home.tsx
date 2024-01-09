@@ -33,7 +33,7 @@ const Home: React.FC = () => {
   <div style={{ position: 'relative', paddingBottom: '62.5%', height: 0 }}>
       <iframe 
         src="https://www.loom.com/embed/7f1b615263274a849772967e5d6323ab?sid=f46f64fd-381b-464b-b17d-ab911dbdbde3"
-        frameBorder="0"
+
         allowFullScreen
         style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
       ></iframe>
