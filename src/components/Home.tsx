@@ -19,11 +19,11 @@ const Home: React.FC = () => {
   <p>vedansh0739[at]gmail[dot]com</p>
   <br></br>
   <h2>Notes</h2>
-  <h3>Iter solely uses screenshots of pages to make decisions!!!</h3>
+  <h3>Iter</h3>
 
-  <p>[09/01/23] Iter uses Cogagent to allow users to make browser automation workflows using natural language. A screenshot of the current page and the corresponding user command is used by the model to issue the necessary keyboard or mouse action. The lack of dependance on information from the DOM allows it to be so much more versatile and generalisable across the web! The future of these kind of agents is bright!
+  <p>[09/01/23] Iter uses Cogagent, a visual language model, to allow users to make browser automation workflows using natural language. A screenshot of the current page and the corresponding user command is used by the model to issue the necessary keyboard or mouse action. The lack of dependance on information from the DOM allows it to be much more generalisable than agents that rely solely on HTML content!
     
-    Technologies used: Google compute engine to host the visual language model using Flask, Django, Playwright (for backend), React </p>
+    Technologies used: Google compute engine, Django, Playwright, React </p>
     <div style={{ position: 'relative', paddingBottom: '62.5%', height: 0 }}>
     <iframe style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}src="https://www.youtube.com/embed/31hfh931XfU?si=NY1c54YiIWFJhkja" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
     </div>
