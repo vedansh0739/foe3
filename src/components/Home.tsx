@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     <div className="col">
     <h1>Vedansh Bagadia</h1>
       
-  <p>Hi! I'm so glad you're here! I am Vedansh and I am currently working on making autonomous agents. I am primarily focussing on two things and these will stay true for atleast several years in the future: firstly, creating something, and secondly, collecting feedback from users who use that thing. I also believe it's important to carry out these tasks quickly and with assertiveness, while absorbing as much information as humanely possible. Inspired by John Carmack, I try to maximize the time I spend operating on something like a <a href="https://www.youtube.com/watch?v=I845O57ZSy4&t=18762s"  target='_blank'>gradient descent</a>.</p>
+  <p>Hi! I'm so glad you're here! I am Vedansh and I am currently working on making AI systems. I am primarily focussing on two things and these will stay true for atleast several years in the future: firstly, creating something, and secondly, collecting feedback from users who use that thing. I also believe it's important to carry out these tasks quickly and with assertiveness, while absorbing as much information as humanely possible. Inspired by John Carmack, I try to maximize the time I spend operating on something like a <a href="https://www.youtube.com/watch?v=I845O57ZSy4&t=18762s"  target='_blank'>gradient descent</a>.</p>
   <p>Lets talk!</p>
   <p>vedansh0739[at]gmail[dot]com</p>
   <br></br>
