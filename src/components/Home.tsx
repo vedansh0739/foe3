@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     <div className="col">
     <h1>Vedansh Bagadia</h1>
       
-  <p>Hi, I'm Vedansh! I enjoy helping people work within their resource constraints and tackling problems by diving several layers deep. I love strategizing the best ways to solve challenges while optimizing for specific compute or resource limitations. While some may see constraints as roadblocks, I see them as opportunities for innovation. I also believe it's important to carry out these tasks quickly and with assertiveness, while absorbing as much information as humanely possible. Inspired by John Carmack, I try to maximize the time I spend operating on something like a <a href="https://www.youtube.com/watch?v=I845O57ZSy4&t=18762s"  target='_blank'>gradient descent</a>.</p>
+  <p>Hi, I'm Vedansh! I enjoy helping people work within their resource constraints and tackling problems by diving many layers deep. I love strategizing the best ways to solve challenges while optimizing for specific compute or resource limitations. I also believe it's important to carry out these tasks quickly and with assertiveness, while absorbing as much information as humanely possible. Inspired by John Carmack, I try to maximize the time I spend operating on something like a <a href="https://www.youtube.com/watch?v=I845O57ZSy4&t=18762s"  target='_blank'>gradient descent</a>.</p>
   <p>Lets talk!</p>
   <p>vedansh0739[at]gmail[dot]com</p>
   <br></br>
